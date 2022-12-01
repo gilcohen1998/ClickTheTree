@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayActivity">
+
+
+    <ImageView
+        android:id="@+id/play_background"
+        android:layout_width="617dp"
+        android:layout_height="959dp"
+        android:scaleY="1.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_default_tree_background" />
+
+
+    <ImageView
+        android:id="@+id/the_tree"
+        android:layout_width="match_parent"
+        android:layout_height="392dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline22"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/default_tree" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/money_drop"
+        android:layout_width="232dp"
+        android:layout_height="203dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/the_tree"
+        app:layout_constraintEnd_toEndOf="@+id/the_tree"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/the_tree"
+        app:layout_constraintTop_toTopOf="@+id/the_tree"
+        app:layout_constraintVertical_bias="0.91"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/money_drop2" />
+
+    <TextView
+        android:id="@+id/money_bar"
+        android:layout_width="296dp"
+        android:layout_height="70dp"
+
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/bungee_inline"
+        android:gravity="right"
+        android:textColor="#000000"
+        app:drawableRightCompat="@drawable/money_shop_icon_big"
+        app:layout_constraintBottom_toTopOf="@+id/guideline17"
+        app:layout_constraintEnd_toEndOf="@+id/back_play_button"
+        app:layout_constraintTop_toBottomOf="@+id/back_play_button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="135dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="579dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="408dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="799dp" />
+
+    <ImageView
+        android:id="@+id/back_play_button"
+        android:layout_width="73dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="426dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
