@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HubActivity">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/nature_background"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:scaleX="1.12"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/new_nature_background" />
+
+    <Button
+        android:id="@+id/play_botton"
+        android:layout_width="439dp"
+        android:layout_height="123dp"
+
+        android:layout_marginTop="240dp"
+        android:background="@drawable/button_tablet_background"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/play_text"
+        android:textSize="50dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/shop_button"
+        android:layout_width="439dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_tablet_background"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/shop_text"
+        android:textSize="50dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/play_botton" />
+
+    <Button
+        android:id="@+id/about_button"
+        android:layout_width="439dp"
+        android:layout_height="123dp"
+
+
+        android:background="@drawable/button_tablet_background"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/about_text"
+        android:textSize="50sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/nature_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shop_button"
+        app:layout_constraintVertical_bias="0.045" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

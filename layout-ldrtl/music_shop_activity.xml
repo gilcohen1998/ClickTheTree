@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_musicshop_background"
+    tools:context=".MusicShopActivity">
+
+
+    <TextView
+        android:id="@+id/money_bar_musicshop"
+        android:layout_width="237dp"
+        android:layout_height="49dp"
+
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/bungee_inline"
+
+        android:gravity="right"
+        android:textColor="#4CAF50"
+        app:drawableRightCompat="@drawable/money_shop_icon"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/back_musicshop_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/default_tree_image"
+        android:layout_width="184dp"
+        android:layout_height="166dp"
+        app:layout_constraintEnd_toEndOf="@+id/cyan_tree_image"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/cyan_tree_image"
+        app:layout_constraintTop_toTopOf="@+id/blue_tree_image"
+        app:srcCompat="@drawable/default_musicshop_frame" />
+
+    <ImageView
+        android:id="@+id/blue_tree_image"
+        android:layout_width="184dp"
+        android:layout_height="166dp"
+        app:layout_constraintEnd_toEndOf="@+id/purple_tree_image"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/purple_tree_image"
+        app:layout_constraintTop_toBottomOf="@+id/money_bar_musicshop"
+        app:srcCompat="@drawable/blue_musicshop_frame" />
+
+    <ImageView
+        android:id="@+id/cyan_tree_image"
+        android:layout_width="184dp"
+        android:layout_height="166dp"
+        app:layout_constraintEnd_toEndOf="@+id/green_tree_image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/green_tree_image"
+        app:layout_constraintTop_toBottomOf="@+id/default_tree_image"
+        app:srcCompat="@drawable/purple_musicshop_frame" />
+
+    <ImageView
+        android:id="@+id/purple_tree_image"
+        android:layout_width="184dp"
+        android:layout_height="166dp"
+        app:layout_constraintEnd_toEndOf="@+id/orange_tree_image"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/orange_tree_image"
+        app:layout_constraintTop_toBottomOf="@+id/blue_tree_image"
+        app:srcCompat="@drawable/orange_musicshop_frame" />
+
+    <ImageView
+        android:id="@+id/green_tree_image"
+        android:layout_width="184dp"
+        android:layout_height="166dp"
+        app:layout_constraintEnd_toEndOf="@+id/red_tree_image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/red_tree_image"
+        app:layout_constraintTop_toBottomOf="@+id/cyan_tree_image"
+        app:srcCompat="@drawable/unknown_musicshop_frame" />
+
+    <ImageView
+        android:id="@+id/orange_tree_image"
+        android:layout_width="184dp"
+        android:layout_height="166dp"
+        app:layout_constraintEnd_toEndOf="@+id/yellow_tree_image"
+        app:layout_constraintStart_toStartOf="@+id/yellow_tree_image"
+        app:layout_constraintTop_toBottomOf="@+id/purple_tree_image"
+        app:srcCompat="@drawable/unknown_musicshop_frame" />
+
+    <ImageView
+        android:id="@+id/red_tree_image"
+        android:layout_width="184dp"
+        android:layout_height="166dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toBottomOf="@+id/green_tree_image"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/unknown_musicshop_frame" />
+
+    <ImageView
+        android:id="@+id/yellow_tree_image"
+        android:layout_width="184dp"
+        android:layout_height="166dp"
+        app:layout_constraintBottom_toBottomOf="@+id/red_tree_image"
+        app:layout_constraintEnd_toStartOf="@+id/red_tree_image"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orange_tree_image"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/unknown_musicshop_frame" />
+
+    <TextView
+        android:id="@+id/mframe_text1"
+        android:layout_width="103dp"
+        android:layout_height="19dp"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="center"
+        android:paddingRight="-10dp"
+        android:text="Selected"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/default_tree_image"
+        app:layout_constraintEnd_toEndOf="@+id/default_tree_image"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="@+id/default_tree_image"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:layout_constraintVertical_bias="0.836" />
+
+    <TextView
+        android:id="@+id/mframe_text2"
+        android:layout_width="101dp"
+        android:layout_height="19dp"
+        android:drawablePadding="-20dp"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="center"
+        android:text="@string/money1_text"
+        android:textColor="#FFFFFF"
+        app:drawableRightCompat="@drawable/money_shop_icon_small"
+        app:layout_constraintBottom_toBottomOf="@+id/blue_tree_image"
+        app:layout_constraintEnd_toStartOf="@+id/default_tree_image"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="@+id/blue_tree_image"
+        app:layout_constraintTop_toTopOf="@+id/blue_tree_image"
+        app:layout_constraintVertical_bias="0.836" />
+
+    <TextView
+        android:id="@+id/mframe_text3"
+        android:layout_width="103dp"
+        android:layout_height="19dp"
+        android:drawablePadding="-20dp"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="center"
+        android:text="@string/money2_text"
+        android:textColor="#FFFFFF"
+        app:drawableRightCompat="@drawable/money_shop_icon_small"
+        app:layout_constraintBottom_toBottomOf="@+id/cyan_tree_image"
+        app:layout_constraintEnd_toEndOf="@+id/cyan_tree_image"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="@+id/cyan_tree_image"
+        app:layout_constraintTop_toBottomOf="@+id/default_tree_image"
+        app:layout_constraintVertical_bias="0.829" />
+
+    <TextView
+        android:id="@+id/mframe_text4"
+        android:layout_width="101dp"
+        android:layout_height="19dp"
+        android:drawablePadding="-20dp"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="center"
+        android:text="@string/money3_text"
+        android:textColor="#FFFFFF"
+        app:drawableRightCompat="@drawable/money_shop_icon_small"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_tree_image"
+        app:layout_constraintEnd_toStartOf="@+id/cyan_tree_image"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="@+id/purple_tree_image"
+        app:layout_constraintTop_toBottomOf="@+id/blue_tree_image"
+        app:layout_constraintVertical_bias="0.829" />
+
+    <ImageView
+        android:id="@+id/back_musicshop_button"
+        android:layout_width="73dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="@+id/default_tree_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/back" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="84dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="184dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ClickTheTree</string>
+    <string name="tree_shop_text">Tree shop</string>
+    <string name="background_shop_text">Background shop</string>
+    <string name="music_shop_text">Music shop</string>
+    <string name="play_text">Play</string>
+    <string name="shop_text">Shop</string>
+    <string name="about_text">About</string>
+    <string name="unselected_text">Unselected</string>
+    <string name="selected_text">Selected</string>
+    <string name="money1_text">210,000</string>
+    <string name="money2_text">720,000</string>
+    <string name="money3_text">21,134,710</string>
+    <string name="version">Version 1.0.0</string>
+</resources>
